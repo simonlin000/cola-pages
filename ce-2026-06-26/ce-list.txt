@@ -1,0 +1,574 @@
+Context Engineering 完整学习资源清单
+
+整理时间：2026-06-26
+搜集范围：全网博客 / 论文 / GitHub / 视频 / KOL / Newsletter
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Context Engineering（上下文工程）
+＝ 在Agent轨迹的每一步，向上下文窗口填入恰好正确信息的艺术与科学。
+
+核心四象限：Write / Select / Compress / Isolate
+
+核心心法：
+Rent the intelligence, own the context.
+模型是租的，上下文才是你自己的资产。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+📕 一、必看7篇文章（按顺序读）
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Anthropic官方定义文《Effective context engineering for AI agents》
+https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+（行业定义性文章，CE必读锚点）
+
+2. Simon Willison 整理 Karpathy/Tobi Lutke 定义串
+https://simonwillison.net/2025/Jun/27/
+（引爆Context Engineering术语风潮的关键博文）
+
+3. Context rot 四模式与五类对策
+https://simonwillison.net/2025/Jun/29/
+https://www.dbreunig.com/
+（上下文失效的四种病理：污染/分心/混淆/冲突）
+
+4. Anthropic《Building Effective AI Agents》
+https://www.anthropic.com/engineering/building-effective-agents
+（Agent架构模式手册：5种编排模式）
+
+5. LangChain Lance Martin《Context Engineering for Agents》
+https://blog.langchain.dev/context-engineering-for-agents/
+（"context is the new prompt"概念源头，同名63分钟Talk）
+
+6. Lilian Weng《LLM Agents: Memory / Planning / Tool Use》
+https://lilianweng.github.io/posts/2023-06-23-agent/
+（Agent Memory理论基石，必读经典长文）
+
+7. Anthropic 多智能体研究系统实战
+https://www.anthropic.com/engineering/multi-agent-research-system
+（Isolate策略最佳实战范本，含可复用prompt片段）
+
+
+📗 二、深度长文9篇
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Context plumbing（上下文管道工隐喻）
+https://simonwillison.net/2025/Nov/29/
+
+2. Too many MCP servers on the dance floor（工具上下文成本量化）
+https://simonwillison.net/2025/Aug/22/too-many-mcps/
+
+3. Just Talk To It — Peter Steinberger（Claude Code/Codex重度用户实战）
+https://steipete.me/posts/just-talk-to-it
+
+4. Effective harnesses for long-running agents（Anthropic长程agent）
+https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents
+
+5. Code execution with MCP（MCP时代上下文压缩前沿）
+https://www.anthropic.com/engineering/code-execution-with-mcp
+
+6. LiteLLM Caching文档（Exact + Semantic Caching实战配置）
+https://docs.litellm.ai/docs/proxy/caching
+（同类参考：GPTCache官方仓库 https://github.com/zilliztech/GPTCache）
+
+7. Prompt Caching with Claude（KV-cache经济学经典解读）
+https://simonwillison.net/2024/Aug/14/prompt-caching-with-claude/
+
+8. Introducing Contextual Retrieval（Anthropic上下文检索）
+https://www.anthropic.com/news/contextual-retrieval
+
+9. Structured Context Engineering for File-Native Agentic Systems（9649次实验反直觉结论）
+https://arxiv.org/abs/2602.05025
+导读：https://simonwillison.net/2026/Feb/9/structured-context-engineering-for-file-native-agentic-systems/
+
+补充官方文档：
+• Anthropic Long Context Tips: https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-examples
+• Anthropic Prompt Caching: https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching
+• Google Gemini Context Caching: https://ai.google.dev/gemini-api/docs/caching
+• OpenAI Cookbook（官方示例仓库）: https://github.com/openai/openai-cookbook
+• Jina AI博客（多数有中文版）: https://jina.ai/news/
+• LiteLLM文档: https://docs.litellm.ai/docs/
+
+
+📘 三、中文资源8个
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. 《大模型上下文工程实用指南》（GitHub开源中文指南，700+ stars）
+https://github.com/WakeUp-Jin/Practical-Guide-to-Context-Engineering
+（为开发者提供大模型应用开发的骨架思路，CE是设计原则、Agent Harness是构建目标）
+
+2. 机器之心"上下文工程"系列
+https://www.jiqizhixin.com/ （站内搜索"上下文工程"）
+
+3. 量子位"上下文工程"系列
+https://www.qbitai.com/ （站内搜索"上下文工程"）
+
+4. InfoQ中文 AI Agent架构与上下文管理
+https://www.infoq.cn/ （站内搜索"Agent 上下文"）
+
+5. Jimmy Song（宋净超）AI Agent与云原生博客
+https://jimmysong.io/blog/
+
+6. Wayland Zhang《上下文工程：从提示词到信息环境架构》
+https://waylandz.com/ （搜索"上下文工程"）
+
+7. 少数派/知乎"给AI Agent做内存管理"实战分享
+https://sspai.com/ 或 https://www.zhihu.com/（搜索"上下文工程"） （搜索"上下文工程"）
+
+8. 智源社区长上下文与记忆机制综述
+https://www.baai.ac.cn/
+
+
+📄 四、核心论文18篇
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ 必读11篇：
+
+1. A Survey of Context Engineering for LLMs (Mei et al., 2025)
+https://arxiv.org/abs/2507.13334
+首篇将CE正式定义为独立学科的综述，整个领域的"地图"
+
+2. Context Engineering行业论述 (Karpathy/Amodei, 2025)
+https://x.com/karpathy
+https://www.anthropic.com/engineering
+"LLM=CPU, Context=RAM"产业共识源头
+
+3. Lost in the Middle (Liu et al., TACL 2024)
+https://arxiv.org/abs/2307.03172
+U型性能曲线，long-context奠基性实证
+
+4. LongBench (Bai et al., ACL 2024)
+https://arxiv.org/abs/2308.14508
+中英双语long-context基准事实标准
+
+5. StreamingLLM / Attention Sinks (Xiao et al., 2023)
+https://arxiv.org/abs/2309.17453
+发现attention sink现象，KV cache eviction引爆点
+
+6. H2O: Heavy-Hitter Oracle (Zhang et al., NeurIPS 2023)
+https://arxiv.org/abs/2306.14048
+KV cache驱逐经典算法，29倍吞吐提升
+
+7. SnapKV (Li et al., 2024)
+https://arxiv.org/abs/2404.14469
+最实用KV压缩方案，8.2倍显存节省+3.6倍加速
+
+8. Retrieval-Augmented Generation (Lewis et al., NeurIPS 2020)
+https://arxiv.org/abs/2005.11401
+RAG第0号论文，开山之作
+
+9. RAG for LLMs: A Survey (Gao et al., 2024)
+https://arxiv.org/abs/2312.10997
+RAG工程落地最常用参考图谱
+
+10. LLMLingua (Jiang et al., EMNLP 2023)
+https://arxiv.org/abs/2310.05736
+微软出品，prompt压缩奠基，20倍压缩几乎不损性能
+
+11. MemGPT / Towards LLMs as Operating Systems (Packer et al., 2023)
+https://arxiv.org/abs/2310.08560
+Agent虚拟上下文管理最具影响力系统论文，后演化为Letta
+
+📎 选读7篇：
+
+12. Needle In A Haystack (Greg Kamradt, 2023)
+https://github.com/gkamradt/LLMTest_NeedleInAHaystack
+长上下文压力测试，业界标配
+
+13. Scissorhands (Liu et al., NeurIPS 2023)
+https://arxiv.org/abs/2305.17118
+重要性持续性假说，KV压缩5倍
+
+14. PyramidKV (Cai et al., 2024)
+https://arxiv.org/abs/2406.02069
+KV各层动态预算，12%cache即匹配完整性能
+
+15. LongLLMLingua (Jiang et al., 2023)
+https://arxiv.org/abs/2310.06839
+长上下文场景压缩首选
+
+16. Memory Mechanism of LLM Agents (Zhang et al., 2024)
+https://arxiv.org/abs/2404.13501
+Agent记忆机制首篇系统综述
+
+17. PagedAttention / vLLM (Kwon et al., SOSP 2023)
+https://arxiv.org/abs/2309.06180
+prefix caching事实标准
+
+18. Semantic Caching（GPTCache等）
+https://github.com/zilliztech/GPTCache
+语义缓存，工业落地价值高
+
+论文建议阅读顺序：
+Survey → Lost in the Middle → StreamingLLM → H2O → SnapKV → Prompt Caching → RAG原论文 → RAG Survey → LLMLingua → MemGPT → Agent Memory Survey → Semantic Caching
+
+
+💻 五、GitHub开源项目28+5个
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 RAG框架/库（8个）：
+
+1. LangChain / LangGraph
+https://github.com/langchain-ai/langchain
+https://github.com/langchain-ai/langgraph
+LLM应用/Agent编排事实标准
+
+2. LlamaIndex
+https://github.com/run-llama/llama_index
+数据优先RAG框架，LlamaParse处理复杂PDF
+
+3. Dify
+https://github.com/langgenius/dify
+一站式低代码LLM应用平台
+
+4. RAGFlow
+https://github.com/infiniflow/ragflow
+深度文档理解+可溯源引用
+
+5. Haystack (deepset)
+https://github.com/deepset-ai/haystack
+企业级强类型RAG pipeline
+
+6. DSPy (Stanford)
+https://github.com/stanfordnlp/dspy
+编程式LM pipeline+自动优化prompt
+
+7. RAGAS
+https://github.com/explodinggradients/ragas
+RAG评测gold standard
+
+8. Unstructured
+https://github.com/Unstructured-IO/unstructured
+通用文档解析ETL
+
+🧠 Agent Memory / Context管理（5个）：
+
+9. Mem0
+https://github.com/mem0ai/mem0
+即插即用Agent记忆层
+
+10. Letta（原MemGPT）
+https://github.com/letta-ai/letta
+自编辑记忆+睡眠期计算
+
+11. Zep + Graphiti
+https://github.com/getzep/zep
+https://github.com/getzep/graphiti
+时态知识图谱记忆，处理知识随时间变化
+
+12. Cognee
+https://github.com/topoteretes/cognee
+自动抽取知识图谱+混合检索
+
+13. Model Context Protocol (MCP)
+https://github.com/modelcontextprotocol
+Anthropic发起，Agent-工具接入事实标准，已捐赠Linux基金会
+
+⚡ KV Cache / 推理优化（6个）：
+
+14. vLLM
+https://github.com/vllm-project/vllm
+高吞吐推理引擎，PagedAttention标配
+
+15. SGLang
+https://github.com/sgl-project/sglang
+RadixAttention最强KV复用，xAI/Cursor在用
+
+16. LMCache
+https://github.com/LMCache/lmcache
+独立KV缓存层，跨实例跨节点共享（前沿创新）
+
+17. StreamingLLM (MIT Han Lab)
+https://github.com/mit-han-lab/streaming-llm
+Attention Sinks实现，无限流式输入
+
+18. FlexGen
+https://github.com/FMInference/FlexGen
+单卡有限GPU下跑长上下文
+
+19. IceCache
+https://github.com/yuzhenmao/IceCache
+语义重要度KV冷热分层（前沿方向）
+
+💾 Caching工具（4个）：
+
+20. GPTCache (Zilliz)
+https://github.com/zilliztech/GPTCache
+最成熟开源semantic cache
+
+21. RedisVL
+https://github.com/RedisVentures/redisvl
+Redis官方SemanticCache
+
+22. LLMLingua (Microsoft)
+https://github.com/microsoft/LLMLingua
+prompt压缩标杆
+
+23. 厂商原生Prompt Caching（Anthropic/OpenAI已默认开启）
+
+🔍 Observability / 调试（4个）：
+
+24. Langfuse
+https://github.com/langfuse/langfuse
+MIT开源，ClickHouse收购
+
+25. LangSmith SDK
+https://github.com/langchain-ai/langsmith-sdk
+LangChain官方tracing/eval平台
+
+26. Arize Phoenix
+https://github.com/Arize-ai/phoenix
+span级上下文可视化
+
+27. TruLens
+https://github.com/truera/trulens
+RAG Triad评估框架
+
+📋 Awesome/模板：
+
+28. Awesome-Context-Engineering
+https://github.com/yzfly/awesome-context-engineering
+https://github.com/Meirtz/Awesome-Context-Engineering
+Awesome-LLM-Apps: https://github.com/Shubhamsaboo/awesome-llm-apps
+Awesome-RAG: https://github.com/Danielskry/Awesome-RAG
+Context-Engineering开源课程: https://github.com/bonigarcia/context-engineering
+
+🎁 Bonus关注（少而新）：
+• Helicone（开源AI Gateway+缓存）https://github.com/Helicone/helicone
+• CrewAI（多Agent角色协作）https://github.com/crewAIInc/crewAI
+• Claude Cookbooks（Anthropic官方实战）https://github.com/anthropics/claude-cookbooks
+
+🛠️ 场景选型速查：
+• 起步RAG/PoC：Dify或LlamaIndex + Chroma/Qdrant + RAGAS
+• 生产级复杂Agent：LangGraph + LlamaIndex + Mem0/Letta + Langfuse + vLLM/SGLang + LMCache
+• 深度文档RAG：RAGFlow或Unstructured + LlamaParse + Haystack
+• Prompt自动优化：DSPy + RAGAS + LLMLingua
+• 长上下文成本控制：vLLM/SGLang + prefix caching + LMCache + LLMLingua
+• 跨工具接入：MCP Server统一暴露
+• 高并发成本优化：GPTCache或RedisVL + 厂商原生prompt cache
+
+
+🎬 六、视频课程/讲座16个
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎓 系统课程/Bootcamp（3个）：
+
+1. 🏆 Vizuara LLM Context Engineering Bootcamp（2026.3最新，MIT PhD主讲）
+第一讲：https://www.youtube.com/watch?v=xlUIiTSaFKI
+完整Playlist：https://www.youtube.com/playlist?list=PLPTV0NXA_ZSj-E8A1DBvbWIYGxC46u-Hd
+配套笔记：https://github.com/di37/context-engineering-bootcamp
+全网唯一以Context Engineering为名的完整Bootcamp，首讲2小时+
+
+2. Stanford CME295 Transformers & LLMs（2025秋，9讲完整）
+https://www.youtube.com/playlist?list=PLoROMvodv4rOCXd21gf0CF4xr35yINeOy
+课程主页：https://cme295.stanford.edu/syllabus/
+含Agentic LLMs专讲
+
+3. Berkeley CS294-196 Agentic AI MOOC（2025秋，8讲）
+B站中文字幕版：https://www.bilibili.com/video/BV1sgUsBYEc9/
+课程主页：https://rdi.berkeley.edu/agentic-ai/f25
+
+🎤 官方Talk/Webinar（6个）：
+
+4. Lance Martin (LangChain): Context Engineering for Agents（63min）
+YouTube搜标题"Context Engineering for Agents Lance Martin LangChain"
+Slides：https://docs.google.com/presentation/d/16aaXLu40GugY-kOpqDU4e-S0hD1FmHcNyF0rRRnb1OU
+
+5. Harrison Chase (LangChain CEO) @ Sequoia: Long-Horizon Agents（40min）
+YouTube搜标题"Context Engineering Our Way to Long-Horizon Agents Harrison Chase"
+
+6. LangChain CE Beginner Blueprint（35min入门）
+YouTube搜标题"LangChain Context Engineering to Build AI Agents in 2025 Beginner Blueprint"
+
+7. See How Anthropic Uses Context Engineering（6min可视化讲解）
+YouTube搜标题"See How Anthropic Uses Context Engineering"
+
+8. Microsoft Foundry: Is CE the new RAG?（28min）
+https://www.youtube.com/watch?v=wGpJdn8frYE
+
+9. IBM: How RAG/GraphRAG/CE Improve AI（11min快速全景）
+https://www.youtube.com/watch?v=pN-LfxNFiTc
+
+📺 YouTube频道/短课（3个）：
+
+10. Greg Kamradt @DataIndependent
+频道：https://www.youtube.com/@DataIndependent
+5 Levels Of Text Splitting（30min，RAG分块必看）: https://www.youtube.com/watch?v=8OJC21T2SL4
+
+11. 吴恩达 Advanced RAG 短课
+B站中英字幕版：https://www.bilibili.com/video/BV1n25pznEi6/
+1-2小时，含RAG Triad评估体系
+
+12. 吴恩达 Knowledge Graphs for RAG（2026最新）
+B站搬运：https://www.bilibili.com/video/BV1ajjQ63EkV/
+
+🇨🇳 B站中文教程（4个）：
+
+13. 《长上下文 vs RAG》技术选型全流程
+https://www.bilibili.com/video/BV176A2zpEhf/
+
+14. 🏆 《RAG全集》2025讲得最好的RAG教程（23集）
+https://www.bilibili.com/video/BV1B34AzdEyb/
+多源检索+rerank+动态上下文，中文口碑最高
+
+15. 清华刘知远团队2025大模型公开课
+https://www.bilibili.com/video/BV1n2CEYiEyA/
+
+视频学习路径建议：
+入门→IBM 10min + Anthropic 5min + LangChain Blueprint 35min
+RAG→吴恩达Advanced RAG + Greg Kamradt分块视频 + B站2025 RAG全集
+Agent→Lance Martin 63min Talk + Harrison Chase访谈 + Vizuara Bootcamp
+学院派→Stanford CME295 + Berkeley CS294中字版 + 清华刘知远公开课
+
+
+👤 七、值得Follow的Twitter/X KOL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⭐ 核心13位（按优先级）：
+
+1. Andrej Karpathy（前OpenAI/特斯拉，现Anthropic，CE定义者）
+https://x.com/karpathy
+
+2. swyx（Shawn Wang，Latent Space主播，AIE World's Fair创始人）
+https://x.com/swyx
+
+3. Harrison Chase（LangChain CEO）
+https://x.com/hwchase17
+
+4. Charles Packer（Letta/MemGPT CEO，Berkeley PhD）
+https://x.com/charlespacker
+
+5. Taranjeet Singh（Mem0创始人）
+https://x.com/taranjeetio
+
+6. Chip Huyen（《AI Engineering》作者，Stanford讲师）
+https://x.com/chipro
+
+7. Jack Morris（Engram Lab，"memory over reasoning"反向声音）
+https://x.com/jxmnop
+
+8. Omar Khattab（DSPy/ColBERT作者，MIT CSAIL）
+https://x.com/lateinteraction
+
+9. Jerry Liu（LlamaIndex CEO）
+https://x.com/jerryjliu0
+
+10. Sebastian Raschka（《Build LLM From Scratch》作者）
+https://x.com/rasbt
+
+11. Simon Willison（Django联合作者，CE一手实测）
+https://x.com/simonw
+
+12. Nathan Lambert（Interconnects作者，前AI2 Olmo）
+https://x.com/natolambert
+
+13. Ethan Mollick（Wharton教授，企业Agent落地视角）
+https://x.com/emollick
+
+🔄 补充5位：
+• Greg Kamradt（ARC Prize主席）https://x.com/GregKamradt
+• Lilian Weng（Lil'Log作者）https://x.com/lilianweng
+• Elvis（DAIR.AI，论文聚合）https://x.com/omarsar0
+• Jay Alammar（Cohere，视觉化解释LLM）https://x.com/jayalammar
+• Dario Amodei（Anthropic CEO）https://x.com/darioamodei
+
+
+📰 八、Newsletter / Podcast / 社区
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Latent Space（swyx+Alessio，CE话题密度最高podcast+newsletter）
+https://latent.space
+
+2. Interconnects（Nathan Lambert，独立AI/post-training newsletter）
+https://www.interconnects.ai
+
+3. Lil'Log（Lilian Weng，Agent Memory教科书级长文）
+https://lilianweng.github.io
+
+4. Chip Huyen blog（《AI Engineering》配套内容）
+https://huyenchip.com/
+
+5. The Batch（Andrew Ng/DeepLearning.AI，入门时事）
+https://www.deeplearning.ai/the-batch/
+
+6. r/LocalLLaMA（long-context/RAG本地部署一线反馈）
+https://reddit.com/r/LocalLLaMA
+
+7. LangChain/LlamaIndex Discord+Blog（工具链官方changelog）
+https://discord.gg/langchain
+https://discord.gg/llamaindex
+
+补充：
+• Anthropic官方工程博客：https://www.anthropic.com/engineering
+• Hacker News搜索入口：https://hn.algolia.com/?q=context+engineering
+• DAIR.AI Newsletter（Elvis，论文聚合）
+
+
+📅 九、7天快速上手计划
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Day 1：
+IBM 10min短片 + Anthropic 5min解读视频 + Simon引入文 + Anthropic agents模式文
+目标：脑中有Context Engineering全景
+
+Day 2：
+精读Anthropic《Effective CE》定义文 + Lance Martin博客+Talk
+目标：懂Write/Select/Compress/Isolate四象限框架
+
+Day 3：
+读Lilian Weng agent记忆文 + MemGPT论文 + Lost in the Middle论文
+目标：懂底层问题（为什么长上下文会失效）
+
+Day 4：
+吴恩达Advanced RAG短课 + Greg Kamradt 5 Levels of Text Splitting视频
+目标：懂RAG工程化（chunking/retrieval/eval）
+
+Day 5：
+LangGraph官方教程跑通 + 接Mem0或Letta做记忆层
+目标：产出第一个有记忆的Agent
+
+Day 6：
+跑RAGAS评测 + LLMLingua压缩实验 + Anthropic Cookbook multi-agent示例
+目标：有质量闭环，能优化context效率
+
+Day 7：
+看Vizuara Bootcamp第一讲 + 订阅Latent Space + 跟Karpathy/swyx Twitter
+目标：进入社区节奏，持续跟进
+
+
+🗺️ 十、学习路径（按难度递进）
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🟢 入门（2-3天，建立全景）：
+1. IBM 10分钟短片
+2. Anthropic 5分钟解读视频
+3. LangChain Beginner's Blueprint（35min）
+4. Simon Willison引入文
+5. B站《2025 RAG全集》23集动手跟做
+
+🟡 进阶（1-2周，进入工程）：
+1. Anthropic《Effective CE》定义文
+2. LangChain Lance Martin Talk（63min）
+3. Lilian Weng agent记忆文
+4. 吴恩达Advanced RAG短课
+5. Greg Kamradt chunking视频
+6. 论文：Lost in the Middle、RAG Survey、MemGPT
+
+🔴 实战（边做边学）：
+1. LangGraph教程 + Mem0/Letta接记忆
+2. vLLM/SGLang体验prefix caching
+3. DSPy+RAGAS做评估驱动优化
+4. Anthropic Cookbook multi-agent抄一遍
+5. 跟Karpathy/swyx/Harrison Chase Twitter节奏
+
+🟣 前沿（持续跟进）：
+1. Latent Space podcast
+2. Interconnects newsletter
+3. r/LocalLLaMA一线实战
+4. 跟踪LMCache/Graphiti/MCP/IceCache等"少而新"项目
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+祝学习顺利。
+有问题随时找我。
